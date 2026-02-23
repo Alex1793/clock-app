@@ -1,0 +1,88 @@
+/* *,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 55px 165px 98px 165px;
+    margin: 0;
+    background-image: url('./assets/desktop/bg-image-daytime.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#root {
+    position: relative;
+    z-index: 2;
+} */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.day {
+    background-image: url('./assets/desktop/bg-image-daytime.jpg');
+}
+
+body.night {
+    background-image: url('./assets/desktop/bg-image-nighttime.jpg');
+}
+
+body {
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    transition: background-image 1s ease;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#root {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    /* На всю высоту */
+    display: flex;
+    /* Включаем flex */
+    flex-direction: column;
+    /* Вертикальное расположение */
+    padding: 55px 165px 98px 165px;
+    /* Отступы перенесены из body */
+}

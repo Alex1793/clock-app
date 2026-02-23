@@ -1,0 +1,44 @@
+.quote__wrapper {
+    width: 575px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+.quote__text {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    width: 540px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.quote__author {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.quote__button {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.quote__button:hover {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+    transition: transform 0.5s ease-in-out;
+}

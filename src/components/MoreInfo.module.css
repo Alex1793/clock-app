@@ -1,0 +1,44 @@
+.moreInfo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 74px 430px 74px 165px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    height: 400px;
+    backdrop-filter: blur(40.774227142333984px);
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.moreInfo__wrapper_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.moreInfo__descr {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 187%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+.moreInfo__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    color: #303030;
+}
+
+.line {
+    align-self: center;
+    margin: 0;
+    width: 1px;
+    height: 252px;
+    background: #303030;
+    opacity: 0.25;
+}
